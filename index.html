@@ -2,127 +2,166 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-DvPDDfy5.css">
+    <link rel="icon"  href="/montana_garage/assets/logo-CaroUy-n.png" />
+    <title>MONTANA GARAGE</title>
+    <script type="module" crossorigin src="/montana_garage/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/montana_garage/assets/index-CuLkfq-H.css">
   </head>
+
   <body>
     <header class="header">
   <div class="container">
     <nav class="nav">
       <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/vanilla-app-template/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
+       <img src="../img/logo.png" width="100" height="100">
       </a>
       <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <li class="nav-link"><a href="#services">ПОСЛУГИ</a></li>
+      <li class="nav-link"><a href="#about">ПРО НАС</a></li>
+      <svg class="circle-down" width="24" height="24">
+        <use href="../img/symbol-defs.svg#icon-circle-down"></use>
+      </svg>
+      <li class="nav-link"><a href="#location">ЛОКАЦІЯ</a></li>
+      <li class="nav-link"><a href="#contact">З'ЯЗОК</a></li>
       </ul>
+      
+      <address class="menu-address">
+        <ul class="nav-list">
+          <li class="nav-link">
+            <a class="contact-list-link-address active" href="#contact"> +38 (063) 782-91-15 </a>
+          </li>
+        </ul>
+      </address>
     </nav>
+
+    <button class="burger-btn" type="button">
+      <svg class="burger-icon" width="24" height="24">
+        <use href="../img/symbol-defs.svg#icon-Burger"></use>
+      </svg>
+    </button>
   </div>
+
+  <div class="mobile-menu">
+    <div class="container mobile-menu-container">
+      <button class="mobile-menu-close" type="button" data-modal-close>
+        <svg class="close-button" width="8" height="8">
+          <use href="../img/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="menu-nav">
+          <li class="menu-item-nav">
+            <a class="menu-link-nav active" href="#services">ПОСЛУГИ</a>
+          </li>
+          <li class="menu-item-nav">
+            <a class="menu-link-nav" href="#about">ПРО НАС</a>
+          </li>
+          <li class="menu-item-nav">
+            <a class="menu-link-nav" href="#location">ЛОКАЦІЯ</a>
+          </li>
+          <li class="menu-item-nav">
+            <a class="menu-link-nav" href="#contact">ЗВ'ЯЗОК</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="order-service-btn-mobile" href="tel:+380637829115">
+        <button class="order-service-btn-mobile">Записатися</button>
+      </a>
 </header>
 
 
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/vanilla-app-template/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+      
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="paragraph"> 
+               MONTANA GARAGE
+            </h1>
+            <p class="main-title">
+                ваш <span class="partner">надійний партнер</span> у світі автомобілів!
+               <p class="main-title"> Ми пропонуємо сучасну діагностику, бездоганний сервіс і якісний ремонт, щоб ваш автомобіль завжди був у відмінному стані</p>
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section-->
+     <section class="services-section" id="services"> 
+        <div class="container services-container"> 
+            <h2 class="services">ПОСЛУГИ</h2>
+        <ul class="services-list"> 
+            <li class="services-list-item"> 
+                <h3 class="services-list-title">діагностика</h3>
+                   <li class="services-list-text">Перевірка та заміна масла</li>
+                    <li class="services-list-text">Діагностика електроніки та систем автомобіля</li>
+                    <li class="services-list-text">Перевірка та обслуговування гальмівної системи</li>
+                    <li class="services-list-text"> Регулювання та заміна запчастин</li>
+                    <li class="services-list-text">Комп'ютерна діагностика двигуна і трансмісії</li>   
+            </li>
+        </ul>
+            <ul class="services-list">
+            <li class="services-list-item">
+                <h3 class="services-list-title">ремонт</h3>
+                <li class="services-list-text">Ремонт двигуна та трансмісії</li>
+            <li class="services-list-text">Ремонт підвіски та ходової частини</li>
+            <li class="services-list-text"> Заміна фреону та чистка систем кондиціонування та охолодження</li>  
+
+            </li>
+            </ul>
+            <ul class="services-list">
+            <li class="services-list-item">
+                <h3 class="services-list-title">інші послуги</h3>
+                <li class="services-list-text">Установка додаткових аксесуарів</li> 
+                <li class="services-list-text">Замовлення та установка нових комплектуючих</li> 
+            </li>
+            </ul>
+        </ul>
+        </div>
+     </section>
+
+     <!-- Photo Section -->
+    <section class="photo-section" id="photo"> 
+    <div class="container photo-container">
+          <img class="photo-hand" src="../img/63122c7c0d09395c8ecfd791_Asset.png.png">
+          <img src="../img/IMG_20241211_182154_514.jpg" width="500" height="300">
+          <img class="photo-hand" src="../img/63122c774c17c17f583cfacb_Asset.png.png">
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
+    </section>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
+    <!-- About Us-->
+     <section class="about-section" id="about"> 
+        <div class="container"> 
+            <h2 class="about-title">ПРО НАС</h2>
+            <p class="paragraph-about">Наше СТО — сучасне і готове забезпечити вас <span class="partner">високоякісним обслуговуванням </span> всіх типів автомобілів. Ми працюємо з різними марками та моделями, включаючи військову, гарантуючи надійність і
+            професіоналізм у кожній деталі.</p>
+             <img class="about-paragraph" src="../img/IMG_20241210_221251_699.jpg" width="500" height="300"></p>
+        </div>
+     </section>
 
+     <!-- Map Section-->
+    <section class="map-section" id="location">
+        <div class="container map-container">  
+            <p class="map-title"> Велика Кільцева 4Г</p>
+            <iframe class="map-frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226.45816434843957!2d30.360395898212776!3d50.42689518328364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb9c18600779%3A0x59d161e87f4dd131!2z0LLRg9C7LiDQktC10LvQuNC60LAg0JrRltC70YzRhtC10LLQsCwgNNCzLCDQn9C10YLRgNC-0L_QsNCy0LvRltCy0YHRjNC60LAg0JHQvtGA0YnQsNCz0ZbQstC60LAsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDA4MTI5!5e0!3m2!1sru!2sua!4v1738586037549!5m2!1sru!2sua"
+                width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
+  <span class="highlight">Завжди на зв'язку та готові допомогти!</span>
+  <p class="footer-desc ">Телефонуйте нам у <span class="partner"> будь-який час </span> — ми оперативно вирішимо ваше питання!</p>
+    <a class="order-service" href="tel:+380637829115">
+      <button class="order-service-btn">Записатися</button>
+    </a>
 </footer>
 
 
+    
   </body>
 </html>

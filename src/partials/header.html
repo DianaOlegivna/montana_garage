@@ -2,18 +2,58 @@
   <div class="container">
     <nav class="nav">
       <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+       <img src="../img/logo.png" width="100" height="100">
       </a>
       <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <li class="nav-link"><a href="#services">ПОСЛУГИ</a></li>
+      <li class="nav-link"><a href="#about">ПРО НАС</a></li>
+      <svg class="circle-down" width="24" height="24">
+        <use href="../img/symbol-defs.svg#icon-circle-down"></use>
+      </svg>
+      <li class="nav-link"><a href="#location">ЛОКАЦІЯ</a></li>
+      <li class="nav-link"><a href="#contact">З'ЯЗОК</a></li>
       </ul>
+      
+      <address class="menu-address">
+        <ul class="nav-list">
+          <li class="nav-link">
+            <a class="contact-list-link-address active" href="#contact"> +38 (063) 782-91-15 </a>
+          </li>
+        </ul>
+      </address>
     </nav>
+
+    <button class="burger-btn" type="button">
+      <svg class="burger-icon" width="24" height="24">
+        <use href="../img/symbol-defs.svg#icon-Burger"></use>
+      </svg>
+    </button>
   </div>
+
+  <div class="mobile-menu">
+    <div class="container mobile-menu-container">
+      <button class="mobile-menu-close" type="button" data-modal-close>
+        <svg class="close-button" width="8" height="8">
+          <use href="../img/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="menu-nav">
+          <li class="menu-item-nav">
+            <a class="menu-link-nav active" href="#services">ПОСЛУГИ</a>
+          </li>
+          <li class="menu-item-nav">
+            <a class="menu-link-nav" href="#about">ПРО НАС</a>
+          </li>
+          <li class="menu-item-nav">
+            <a class="menu-link-nav" href="#location">ЛОКАЦІЯ</a>
+          </li>
+          <li class="menu-item-nav">
+            <a class="menu-link-nav" href="#contact">ЗВ'ЯЗОК</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="order-service-btn-mobile" href="tel:+380637829115">
+        <button class="order-service-btn-mobile">Записатися</button>
+      </a>
 </header>

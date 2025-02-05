@@ -1,0 +1,310 @@
+ /* Hero Sections */
+.hero-section { 
+        background-repeat: no-repeat;
+        background-position: center;
+    margin: 32px auto;
+}
+
+ .paragraph { 
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 1.34375;
+    text-align: center;
+    color: #19AAE3;
+    display: flex;
+        flex-direction: column;
+} 
+
+.partner { 
+    background-color: #02033B;
+    color: #19AAE3
+}
+
+.paragraph:hover { 
+    color:#e5e5e5;
+    transition: 200ms ease-in;
+}
+
+.main-title { 
+        font-weight: 500;
+            font-size: 32px;
+            line-height: 0.9375;
+            text-align: center;
+            color: #e5e5e5;
+            margin: auto;
+}
+
+@media only screen and (min-width: 768px) { 
+    .main-title { 
+        max-width: 500px;
+    }
+}
+
+    /* Services Section */
+.services-section { 
+    margin: 68px auto;
+    border-top: 1px solid #fff;
+}
+
+.services { 
+    line-height: 2.03125;
+    color: #19aae3;
+}
+
+.services-list { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.services-list-text { 
+font-weight: 400;
+    font-size: 22px;
+    line-height: 1.59091;
+    color: #fff;
+}
+
+.services-list-title { 
+    font-weight: 400;
+        font-size: 32px;
+        line-height: 1;
+        text-transform: lowercase;
+        color: #fff;
+        margin: 24px auto;
+        text-decoration: underline;
+        text-decoration-color: #fff;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 8px;
+}
+
+.services-list-title:hover { 
+    color: #19AAE3;
+    transition: 200ms ease-in;
+}
+
+.services-item-list {
+    font-weight: 400;
+        font-size: 22px;
+        line-height: 1.59091;
+        color: #fff;
+         display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 0px;
+}
+
+@media only screen and (min-width: 768px) { 
+
+    .services-list { 
+        margin-left: 120px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+        .services-container {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+
+            }
+    
+        .services-list {
+            flex: 1;
+            min-width: 300px;
+        }
+    }
+
+  /* Photo Section */
+
+.photo-section img { 
+        display: block;
+        margin: 68px 0;
+        
+}
+
+.photo-container img:first-child,
+.photo-container img:last-child {
+    display: none;
+}
+    
+
+@media only screen and (min-width: 768px) { 
+
+}
+
+@media only screen and (min-width: 1440px) { 
+    .photo-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+    .photo-container img:first-child {
+        display: block;
+        
+    }
+
+    .photo-container img:last-child {
+        display: block;
+    }
+}
+
+  /* About Us */ 
+
+.about-section { 
+    margin: 68px auto;
+}
+
+.about-title { 
+    font-weight: 500;
+        font-size: 36px;
+        line-height: 2.16667;
+        text-align: center;
+        color: #fff;
+}
+
+.about-title:hover { 
+    color: #19AAE3;
+     transition: 200ms ease-in;
+}
+
+.about-paragraph { 
+    font-weight: 400;
+        font-size: 24px;
+        line-height: 1.16667;
+        color: #fff;
+    text-align: center;
+    display: flex;
+        flex-direction: column-reverse;
+}
+
+.paragraph-about { 
+    font-weight: 400;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        color: #e5e5e5;
+        margin-bottom: 24px;
+}
+
+.about-section img { 
+    display: block;
+    margin: 24px auto;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .about-title { 
+        font-size: 56px;
+        line-height: 1.39286;
+    }
+    .paragraph-about { 
+        font-size: 24px;
+    }
+    .about-paragraph { 
+        display: flex;
+            flex-direction: row;
+            align-items: center
+    }
+       
+} 
+
+@media only screen and (min-width: 1440px) {
+    .about-paragraph { 
+        align-items: center;
+    }
+    .paragraph-about { 
+        margin-left: 180px;
+         margin-right: 180px;
+    }
+}
+
+ /* Map Section */
+.map-section {
+    margin: 68px auto;
+}
+.map-container { 
+    display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+}
+
+.map-title { 
+    font-weight: 400;
+        font-size: 20px;
+        line-height: 1.25;
+        text-align: right;
+        color: #fff;
+        background: #19aae3;;
+        position: absolute;
+            bottom: 0;
+            left: -8%;
+            transform: translateY(-50%);
+            color: white;
+            padding: 5px 10px;
+            white-space: nowrap;
+            max-width: 90%;
+            text-align: center;
+            z-index: 10;
+}    
+
+.map-frame { 
+    width: 480px;
+    height: 250px;
+}
+
+@media only screen and (min-width: 768px) { 
+    .map-title {
+            font-weight: 400;
+            font-size: 40px;
+            text-align: center;
+            color: #fff;
+            background: #19aae3;
+            position: absolute;
+            bottom: 0;
+                left: 18%;
+                transform: translateY(-50%);
+                color: white;
+                padding: 5px 10px;
+                white-space: nowrap;
+                max-width: 90%;
+                text-align: center;
+                z-index: 10;
+            
+        }
+    
+        .map-frame {
+        width: 352px;
+            height: 355px;
+        }
+}
+
+@media only screen and (min-width: 1440px) { 
+
+    .map-title {
+            font-weight: 400;
+                font-size: 40px;
+                text-align: right;
+                color: #fff;
+            background: #19aae3;
+            position: absolute;
+            left: 50%;
+                transform: translateY(-50%);
+                color: white;
+                padding: 5px 10px;
+                white-space: nowrap;
+                max-width: 90%;
+                text-align: center;
+                z-index: 10;
+        }
+
+    .map-frame { 
+        width: 500px;
+        height: 350px;
+    }
+}
+
+ 

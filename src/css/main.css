@@ -5,6 +5,10 @@
     margin: 32px auto;
 }
 
+.hero-container { 
+    position: relative;
+}
+
  .paragraph { 
     font-weight: bold;
     font-size: 64px;
@@ -12,8 +16,34 @@
     text-align: center;
     color: #19AAE3;
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    
 } 
+
+.dollar {
+    cursor: pointer;
+   
+}
+
+.flying-dollar {
+    position: absolute;
+    font-size: 12px;
+    color: green;
+    animation: fly 10s linear forwards;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(60px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+}
 
 .partner { 
     background-color: #02033B;
@@ -38,7 +68,11 @@
     .main-title { 
         max-width: 500px;
     }
+    .flying-dollar { 
+        display: none;
+    }
 }
+
 
     /* Services Section */
 .services-section { 

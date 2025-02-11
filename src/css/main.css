@@ -1,3 +1,4 @@
+
  /* Hero Sections */
 .hero-section { 
         background-repeat: no-repeat;
@@ -150,39 +151,48 @@ font-weight: 400;
     }
 
   /* Photo Section */
+.photo-section {
+    display: block;
+    margin: 68px 0;
 
-.photo-section img { 
-        display: block;
-        margin: 68px 0;
-        
 }
 
-.photo-container img:first-child,
-.photo-container img:last-child {
+.photo-img {
     display: none;
 }
-    
 
-@media only screen and (min-width: 768px) { 
-
+.photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-@media only screen and (min-width: 1440px) { 
-    .photo-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+.swiper-photo {
+    max-width: 100px;
+    width: 100%;
+}
 
-    .photo-container img:first-child {
-        display: block;
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1440px) {
+    .photo-img { 
+        display: flex;
         
     }
+    
+        .swiper-photo {
+            max-width: 800px;
+        }
+    
+        .photo-hand {
+            width: 800px;
+            height: 500px;
+            height: auto;
+        }
+        }
 
-    .photo-container img:last-child {
-        display: block;
-    }
-}
 
   /* About Us */ 
 
@@ -211,6 +221,7 @@ font-weight: 400;
     text-align: center;
     display: flex;
         flex-direction: column-reverse;
+        gap: 24px;
 }
 
 .paragraph-about { 
@@ -228,6 +239,19 @@ font-weight: 400;
 
 }
 
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 @media only screen and (min-width: 768px) {
     .about-title { 
         font-size: 56px;
@@ -241,6 +265,9 @@ font-weight: 400;
             flex-direction: row;
             align-items: center
     }
+        .swiper-slide img {
+            height: 500px;
+        }
        
 } 
 
@@ -252,6 +279,9 @@ font-weight: 400;
         margin-left: 180px;
          margin-right: 180px;
     }
+         .swiper-slide img {
+             height: 400px;
+         }
 }
 
  /* Map Section */

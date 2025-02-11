@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon"  href="/montana_garage/assets/logo-CK3AmVJq.png" />
     <title>MONTANA GARAGE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script type="module" crossorigin src="/montana_garage/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/montana_garage/assets/index-ucZ3FQir.css">
+    <link rel="modulepreload" crossorigin href="/montana_garage/assets/vendor-B76d-7w3.js">
+    <link rel="stylesheet" crossorigin href="/montana_garage/assets/index-DcfWvKTJ.css">
   </head>
 
   <body>
@@ -20,7 +22,7 @@
       <li class="nav-link"><a href="#services">ПОСЛУГИ</a></li>
       <li class="nav-link"><a href="#about">ПРО НАС</a></li>
       <svg class="circle-down" width="24" height="24">
-        <use href="/montana_garage/assets/symbol-defs-DwuSoOBB.svg#icon-circle-down"></use>
+        <use href="/montana_garage/assets/symbol-defs-DpXK8jby.svg#icon-circle-down"></use>
       </svg>
       <li class="nav-link"><a href="#location">ЛОКАЦІЯ</a></li>
       <li class="nav-link"><a href="#contact">З'ЯЗОК</a></li>
@@ -37,7 +39,7 @@
 
     <button class="burger-btn" type="button">
       <svg class="burger-icon" width="24" height="24">
-        <use href="/montana_garage/assets/symbol-defs-DwuSoOBB.svg#icon-Burger"></use>
+        <use href="/montana_garage/assets/symbol-defs-DpXK8jby.svg#icon-Burger"></use>
       </svg>
     </button>
   </div>
@@ -46,7 +48,7 @@
     <div class="container mobile-menu-container">
       <button class="mobile-menu-close" type="button" data-modal-close>
         <svg class="close-button" width="8" height="8">
-          <use href="/montana_garage/assets/symbol-defs-DwuSoOBB.svg#icon-close-black-18dp-2-1"></use>
+          <use href="/montana_garage/assets/symbol-defs-DpXK8jby.svg#icon-close-black-18dp-2-1"></use>
         </svg>
       </button>
       <nav class="mobile-menu-nav">
@@ -69,7 +71,6 @@
         <button class="order-service-btn-mobile">Записатися</button>
       </a>
 </header>
-
 
     <main>
       
@@ -123,9 +124,27 @@
      <!-- Photo Section -->
     <section class="photo-section" id="photo"> 
     <div class="container photo-container">
+          <div class="photo-img"> 
           <img class="photo-hand" src="/montana_garage/assets/63122c7c0d09395c8ecfd791_Asset.png-B1jdRv7e.png">
-          <img src="/montana_garage/assets/IMG_20241211_182154_514-BPx7ykmz.jpg" width="500" height="300">
+        </div>
+          <div class="swiper swiper-photo">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> 
+                    <img src="/montana_garage/assets/IMG_20241211_182154_514-BPx7ykmz.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="/montana_garage/assets/IMG_20241210_221251_699-Bn5qDgNY.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="/montana_garage/assets/IMG_20250211_205333_925-BvC9plcr.jpg" />
+                </div>
+            </div>
+            <div class="swiper-button-prev photo-prev"></div>
+            <div class="swiper-button-next photo-next"></div>
+          </div>
+        <div class="photo-img">
           <img class="photo-hand" src="/montana_garage/assets/63122c774c17c17f583cfacb_Asset.png-B--zu8pb.png">
+        </div>
     </div>
     </section>
 
@@ -135,7 +154,33 @@
             <h2 class="about-title">ПРО НАС</h2>
             <p class="paragraph-about">Наше СТО — сучасне і готове забезпечити вас <span class="partner">високоякісним обслуговуванням </span> всіх типів автомобілів. Ми працюємо з різними марками та моделями, включаючи військову, гарантуючи надійність і
             професіоналізм у кожній деталі.</p>
-             <img class="about-paragraph" src="/montana_garage/assets/IMG_20241210_221251_699-Bn5qDgNY.jpg" width="500" height="300"></p>
+            <div class="swiper about-swiper"> 
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"> 
+                    <img class="about-paragraph" src="/montana_garage/assets/IMG_20241210_221251_699-Bn5qDgNY.jpg"  />
+                </div>
+                <div class="swiper-slide">
+                    <img class="about-paragraph" src="/montana_garage/assets/IMG_20250211_205334_040-DvM2GKIR.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="about-paragraph" src="/montana_garage/assets/IMG_20250211_205333_925-BvC9plcr.jpg"/>
+                </div>
+                <div class="swiper-slide">
+                    <img class="about-paragraph" src="/montana_garage/assets/IMG_20241210_221251_699-Bn5qDgNY.jpg"  />
+                </div>
+                <div class="swiper-slide">
+                    <img class="about-paragraph" src="/montana_garage/assets/IMG_20241211_182154_514-BPx7ykmz.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="about-paragraph" src="/montana_garage/assets/IMG_20241210_202406_637-D5yyCZD3.jpg" />
+                </div>
+                </div>
+
+                <div class="swiper-button-prev about-prev"></div>
+                <div class="swiper-button-next about-next"></div>
+            </div>
+
+            
         </div>
      </section>
 
@@ -151,7 +196,6 @@
     </section>
     
     </main>
-
     <footer class="footer" id="contact">
   <div class="container">
   <span class="highlight">Завжди на зв'язку та готові допомогти!</span>
@@ -162,6 +206,6 @@
 </footer>
 
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

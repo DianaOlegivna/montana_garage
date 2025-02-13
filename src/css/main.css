@@ -315,8 +315,8 @@ font-weight: 400;
         white-space: nowrap;
         max-width: 100%;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
-        left: 0%;
-        transform: translateY(100%);      
+        left: -2%;
+        transform: translateY(150%);      
 }
 
 
@@ -353,7 +353,7 @@ font-weight: 400;
 @media only screen and (min-width: 768px) { 
     .map-button {
         left: 40%;
-         transform: translateY(150%);
+         transform: translateY(220%);
             
         }
     

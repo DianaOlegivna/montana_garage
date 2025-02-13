@@ -1,5 +1,6 @@
 .header {
   padding: 12px 0;
+  margin-bottom: 32px;
 }
 
 .header .container {
@@ -105,6 +106,13 @@
           fill: #FFFFFF;
           display: flex;
         }
+    .circle-down:hover,
+    .circle-down:focus{ 
+      fill:#19AAE3;
+      cursor: pointer;
+      transition: 200ms ease-in;
+      
+    }
 }
  
 /* mobile menu */

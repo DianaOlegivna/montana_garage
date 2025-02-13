@@ -1,10 +1,11 @@
-
  /* Hero Sections */
 .hero-section { 
         background-repeat: no-repeat;
         background-position: center;
-    margin: 32px auto;
+    margin-bottom: 64px;
+    
 }
+
 
 .hero-container { 
     position: relative;
@@ -15,7 +16,7 @@
     font-size: 64px;
     line-height: 1.34375;
     text-align: center;
-    color: #19AAE3;
+    color: #e5e5e5;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -51,10 +52,7 @@
     color: #19AAE3
 }
 
-.paragraph:hover { 
-    color:#e5e5e5;
-    transition: 200ms ease-in;
-}
+
 
 .main-title { 
         font-weight: 500;
@@ -77,7 +75,7 @@
 
     /* Services Section */
 .services-section { 
-    margin: 68px auto;
+    margin-bottom: 64px;
     border-top: 1px solid #fff;
 }
 
@@ -90,7 +88,9 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
 }
+
 
 .services-list-text { 
 font-weight: 400;
@@ -153,19 +153,21 @@ font-weight: 400;
   /* Photo Section */
 .photo-section {
     display: block;
-    margin: 68px 0;
+    margin-bottom: 64px;
 
 }
 
-.photo-img {
-    display: none;
+.swiper-button-disabled {
+    pointer-events: none;
+    filter: contrast(90%);
 }
+
+
 
 .photo-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
 }
 
 .swiper-photo {
@@ -184,19 +186,10 @@ font-weight: 400;
 }
 
 @media only screen and (min-width: 1440px) {
-    .photo-img { 
-        display: flex;
-        
-    }
-    
         .swiper-photo {
-            max-width: 800px;
-        }
-    
-        .photo-hand {
-            width: 800px;
-            height: 500px;
-            height: auto;
+            width: 45%;
+            height: 100%;
+            max-width: 950px;
         }
         }
 
@@ -204,7 +197,7 @@ font-weight: 400;
   /* About Us */ 
 
 .about-section { 
-    margin: 68px auto;
+    margin-bottom: 64px;
 }
 
 .about-title { 
@@ -293,7 +286,7 @@ font-weight: 400;
 
  /* Map Section */
 .map-section {
-    margin: 68px auto;
+    margin-bottom: 64px;
 }
 .map-container { 
     display: flex;
@@ -303,24 +296,54 @@ font-weight: 400;
         position: relative;
 }
 
-.map-title { 
-    font-weight: 400;
+.map-button { 
+    display: flex;
+    border: none;
+        text-align: right;
+        cursor: pointer;
+        text-transform: uppercase;
+        outline: none;
+        overflow: hidden;
+        position: absolute;
+        color: #fff;
+        font-weight: 400;
         font-size: 20px;
         line-height: 1.25;
-        text-align: right;
-        color: #fff;
-        background: #19aae3;;
-        position: absolute;
-            bottom: 0;
-            left: -8%;
-            transform: translateY(-50%);
-            color: white;
-            padding: 5px 10px;
-            white-space: nowrap;
-            max-width: 90%;
-            text-align: center;
-            z-index: 10;
-}    
+        background-color: #222;
+        padding: 15px 10px;
+        margin: 0 auto;
+        white-space: nowrap;
+        max-width: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+        left: 0%;
+        transform: translateY(100%);      
+}
+
+
+
+.map-button span {
+    position: relative;
+    z-index: 1;
+}
+
+.map-button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: #19AAE3;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+.map-button:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
 
 .map-frame { 
     width: 480px;
@@ -328,22 +351,9 @@ font-weight: 400;
 }
 
 @media only screen and (min-width: 768px) { 
-    .map-title {
-            font-weight: 400;
-            font-size: 40px;
-            text-align: center;
-            color: #fff;
-            background: #19aae3;
-            position: absolute;
-            bottom: 0;
-                left: 18%;
-                transform: translateY(-50%);
-                color: white;
-                padding: 5px 10px;
-                white-space: nowrap;
-                max-width: 90%;
-                text-align: center;
-                z-index: 10;
+    .map-button {
+        left: 40%;
+         transform: translateY(150%);
             
         }
     
@@ -355,21 +365,9 @@ font-weight: 400;
 
 @media only screen and (min-width: 1440px) { 
 
-    .map-title {
-            font-weight: 400;
-                font-size: 40px;
-                text-align: right;
-                color: #fff;
-            background: #19aae3;
-            position: absolute;
-            left: 50%;
-                transform: translateY(-50%);
-                color: white;
-                padding: 5px 10px;
-                white-space: nowrap;
-                max-width: 90%;
-                text-align: center;
-                z-index: 10;
+    .map-button {
+        left: 55%;
+            transform: translateY(150%);
         }
 
     .map-frame { 

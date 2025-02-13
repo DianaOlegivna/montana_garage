@@ -1,9 +1,12 @@
 import Swiper from 'swiper';
-import { Navigation, Keyboard } from 'swiper/modules'; 
+import { Navigation, Keyboard } from 'swiper/modules';
+import 'fslightbox';
+import RefreshFsLightbox from 'fslightbox';
+
 
 export function initSwiper () { 
     const swiperAbout = new Swiper('.about-swiper', {
-    modules: [Navigation, Keyboard],
+        modules: [Navigation, Keyboard],
     loop: false, 
         slidesPerView: 1,
     navigation: {
@@ -36,8 +39,8 @@ export function initSwiper () {
         loop: false, 
         slidesPerView: 1,
         navigation: {
-            nextEl: '.photo-prev',
-            prevEl: '.photo-next',
+            nextEl: '.photo-next',
+            prevEl: '.photo-prev',
         },
         keyboard: {
             enabled: true,
@@ -54,6 +57,8 @@ export function initSwiper () {
             }
         }
     });
+
+
     
 
 function updateButtons(swiper, prevSelector, nextSelector) {
@@ -66,9 +71,15 @@ function updateButtons(swiper, prevSelector, nextSelector) {
     nextButton.disabled = swiper.isEnd; 
 
     prevButton.classList.toggle('swiper-button-disabled', swiper.isBeginning);
-    nextButton.classList.toggle('swiper-button-disabled', swiper.isEnd);
+    nextButton.classList.toggle('swiper-button-disabled', swiper.isEnd); 
     
+    }
+   if (typeof window.RefreshFsLightbox === 'function') {
+    window.RefreshFsLightbox();
 }
 }
+
+
+
 
 

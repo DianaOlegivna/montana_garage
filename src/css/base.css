@@ -25,6 +25,7 @@ html {
 
 body {
   font-family: var(--);
+  background: linear-gradient(rgb(6, 6, 44), rgb(3, 6, 23));
   display: flex;
   flex-direction: column;
   min-width: 100vw;

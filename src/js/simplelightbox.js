@@ -9,3 +9,4 @@ let lightbox = new SimpleLightbox('.photo-simple', {
 });
     lightbox.refresh();
 }
+

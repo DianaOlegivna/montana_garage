@@ -23,6 +23,30 @@
     
 } 
 
+.paragraph:hover,
+.paragraph:focus { 
+    color: #19aae3;
+    transition: 200ms ease-in;
+}
+ 
+.paragraph::after { 
+content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    width: 110%;
+    height: 4px;
+    border-radius: 4px;
+    transform-origin: center;
+    animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+}
+
+
+ .paragraph.active::after {
+     background: #19AAE3;
+ }
+
 .dollar {
     cursor: pointer;
    
@@ -48,7 +72,6 @@
 }
 
 .partner { 
-    background-color: #02033B;
     color: #19AAE3
 }
 

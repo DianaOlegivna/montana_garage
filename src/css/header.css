@@ -38,6 +38,7 @@
 
 
 
+
 @media only screen and (min-width: 768px) { 
   .header .container {
       display: block;
@@ -61,8 +62,6 @@
       justify-content: center;
       gap: 120px;
     }
-
-  
   
     .nav-link {
       position: relative;
@@ -101,7 +100,12 @@
     .menu-address {
         position: relative;
         display: flex;
+        padding-left: 42px;
+        
       }
+    .instagram-icon {
+         stroke: #19AAE3;
+         }
      .circle-down {
           fill: #FFFFFF;
           display: flex;
@@ -175,6 +179,11 @@
   background-color: #19aae3;;
   fill: #ffffff;
   border: none;
+}
+
+.mobile-instagram-icon { 
+  position: absolute;
+  left: 24px;
 }
 
 .close-button {

@@ -2,7 +2,7 @@ export function dollar() {
 document.querySelector('.paragraph').addEventListener('click', function(event) {
     for (let i = 0; i < 1; i++) {
         let flyingDollar = document.createElement('img');
-        flyingDollar.src = new URL('../img/dollar.png', import.meta.url).href;
+        flyingDollar.src = new URL('../img', import.meta.url).href;
         flyingDollar.classList.add('flying-dollar');
         document.body.appendChild(flyingDollar);
 

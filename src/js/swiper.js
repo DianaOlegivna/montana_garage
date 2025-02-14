@@ -1,8 +1,5 @@
 import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
-import 'fslightbox';
-
-
 
 export function initSwiper () { 
     const swiperAbout = new Swiper('.about-swiper', {
@@ -73,12 +70,6 @@ function updateButtons(swiper, prevSelector, nextSelector) {
     prevButton.classList.toggle('swiper-button-disabled', swiper.isBeginning);
     nextButton.classList.toggle('swiper-button-disabled', swiper.isEnd); 
     
-    }
-     if (window.fslightbox) {
-        window.fslightbox.instances = {};
-    }
-    if (typeof window.refreshFsLightbox === 'function') {
-        window.refreshFsLightbox();
     }
 }
 

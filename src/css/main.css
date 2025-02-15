@@ -2,8 +2,8 @@
 .hero-section { 
         background-repeat: no-repeat;
         background-position: center;
-    margin-bottom: 64px;
-    
+    margin-bottom: 72px;
+    position: relative;
 }
 
 
@@ -16,7 +16,7 @@
     font-size: 64px;
     line-height: 1.34375;
     text-align: center;
-    color: #e5e5e5;
+    color: #19AAE3;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -25,7 +25,7 @@
 
 .paragraph:hover,
 .paragraph:focus { 
-    color: #19aae3;
+    color: #e5e5e5;
     transition: 200ms ease-in;
 }
  
@@ -55,7 +55,6 @@ content: '';
 .flying-dollar {
     position: absolute;
     font-size: 12px;
-    color: green;
     animation: fly 10s linear forwards;
 }
 
@@ -90,15 +89,13 @@ content: '';
     .main-title { 
         max-width: 500px;
     }
-    .flying-dollar { 
-        display: none;
-    }
 }
 
 
     /* Services Section */
+
 .services-section { 
-    margin-bottom: 64px;
+    margin-bottom: 72px;
     border-top: 1px solid #fff;
 }
 
@@ -176,7 +173,7 @@ font-weight: 400;
   /* Photo Section */
 .photo-section {
     display: block;
-    margin-bottom: 64px;
+    margin-bottom: 72px;
 
 }
 
@@ -220,7 +217,7 @@ font-weight: 400;
   /* About Us */ 
 
 .about-section { 
-    margin-bottom: 64px;
+    margin-bottom: 72px;
 }
 
 .about-title { 
@@ -309,7 +306,7 @@ font-weight: 400;
 
  /* Map Section */
 .map-section {
-    margin-bottom: 64px;
+    margin-bottom: 72px;
 }
 .map-container { 
     display: flex;
@@ -373,6 +370,10 @@ font-weight: 400;
     height: 250px;
 }
 
+.map-img { 
+    display: none;
+}
+
 @media only screen and (min-width: 768px) { 
     .map-button {
         left: 40%;
@@ -384,6 +385,10 @@ font-weight: 400;
         width: 352px;
             height: 355px;
         }
+    
+    .map-img { 
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1440px) { 
@@ -391,6 +396,12 @@ font-weight: 400;
     .map-button {
         left: 55%;
             transform: translateY(150%);
+        }
+
+        .map-img {
+            position: relative;
+            display: block;
+            right: 20%;
         }
 
     .map-frame { 

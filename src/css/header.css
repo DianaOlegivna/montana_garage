@@ -170,13 +170,13 @@
 }
 
 .mobile-menu-close:hover {
-  background-color: #19aae3;;
-  fill: #FFFFFF;
+  background-color: #141619;
+  fill: #ffffff;
   border: none;
 }
 
 .mobile-menu-close:focus {
-  background-color: #19aae3;;
+  background-color: #141619;
   fill: #ffffff;
   border: none;
 }
@@ -216,6 +216,21 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
   background-color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link-nav.active:hover,
+.menu-link-nav.active:focus { 
+  background-color: transparent;
+  color:#fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link-nav:focus,
+.menu-link-nav:hover { 
+ background-color:#fff;
+  color: #141619;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
  
 
@@ -231,6 +246,7 @@
     width: 135px;
     height: 48px;
    color: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-service-btn-mobile {
@@ -252,8 +268,15 @@ background: #fff;
   font-family: "Inter", sans-serif;
   width: 154px;
    height: 50px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.order-service-btn-mobile:hover,
+.order-service-btn-mobile:focus { 
+background-color: #141619;
+color: #fff;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 @media screen and (min-width: 768px) {

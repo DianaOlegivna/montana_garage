@@ -336,7 +336,7 @@ font-weight: 400;
         max-width: 100%;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
         left: -2%;
-        transform: translateY(150%);      
+        transform: translateY(160%);      
 }
 
 
@@ -377,7 +377,7 @@ font-weight: 400;
 @media only screen and (min-width: 768px) { 
     .map-button {
         left: 40%;
-         transform: translateY(220%);
+         transform: translateY(180%);
             
         }
     
@@ -394,17 +394,17 @@ font-weight: 400;
 @media only screen and (min-width: 1440px) { 
 
     .map-button {
-        left: 55%;
-            transform: translateY(150%);
+        left: 65%;
+            transform: translateY(190%);
         }
 
         .map-img {
             position: relative;
             display: block;
-            right: 20%;
+            right: 30%;
         }
 
-    .map-frame { 
+    .map-screen { 
         width: 500px;
         height: 350px;
     }

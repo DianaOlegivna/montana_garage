@@ -14,3 +14,6 @@ initSwiper();
 paralaks();
 simple();
 
+
+
+

@@ -75,7 +75,6 @@ content: '';
 }
 
 
-
 .main-title { 
         font-weight: 500;
             font-size: 32px;
@@ -403,11 +402,7 @@ font-weight: 400;
             display: block;
             right: 30%;
         }
-
-    .map-screen { 
-        width: 500px;
-        height: 350px;
-    }
+        
 }
 
  

@@ -35,6 +35,7 @@ export function initSwiper () {
         modules: [Navigation, Keyboard],
         loop: false, 
         slidesPerView: 1,
+        spaceBetween: 20,
         navigation: {
             nextEl: '.photo-next',
             prevEl: '.photo-prev',

@@ -110,7 +110,7 @@
             transform: translateY(-50%);
             z-index: 1;
             left: 10%;  
-            top: 10vh;
+            top: 20vh;
         
         }
     
@@ -140,7 +140,7 @@
 
         .icons8-toyota {
             position: absolute;
-            top: 70vh;
+            top: 100vh;
             transform: translateY(-80%);
             z-index: 1;
             left: 10%;
@@ -169,6 +169,7 @@
             position: absolute;
             transform: translateY(-100%);
             z-index: 1;
+            top: 50vh;
             
         }
     
@@ -177,6 +178,7 @@
             transform: translateY(-80%);
             z-index: 1;
             left: 10%;
+            top: 60vh;
         }
     
         .icons8-volkswagen {
@@ -184,6 +186,7 @@
             transform: translateY(-50%);
             z-index: 1;
             right: 10%;
+            top: 20vh;
         }
 }
 

@@ -2,9 +2,7 @@
   --font-family: "Inter", sans-serif;
     --second-family: "Jura", sans-serif;
     --third-family: "Lakki Reddy", sans-serif;
-    --font3: "Irish Grover", sans-serif;
-    --font4: "Cormorant Unicase", sans-serif;
-    --font5: "Cormorant Garamond", sans-serif;
+ 
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -12,10 +10,7 @@
   color: #242424;
   background-color: #000000;
 
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -24,10 +19,8 @@ html {
 }
 
 body {
-  font-display: swap;
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
   min-height: 100vh;
   margin: 0;
   cursor: default;
@@ -37,6 +30,4 @@ body {
 main {
   flex-grow: 1;
 }
-main:has(.back-link) {
-  text-align: center;
-}
+

@@ -4,6 +4,7 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 import compression from 'vite-plugin-compression';
+import cssnano from 'cssnano';
 
 export default defineConfig(({ command }) => {
   return {
@@ -13,6 +14,7 @@ export default defineConfig(({ command }) => {
     },
     root: 'src',
     build: {
+      cssMinify: true,
       sourcemap: true,
       rollupOptions: {
         input: glob.sync('./src/*.html'),
@@ -51,5 +53,10 @@ export default defineConfig(({ command }) => {
         deleteOriginalAssets: false,
       }),
     ],
+     css: {
+      postcss: {
+        plugins: [cssnano()], 
+      },
+    },
   };
 });

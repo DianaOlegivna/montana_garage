@@ -27,6 +27,7 @@ export function initSwiper () {
         },
         slideChange: function (swiper) {
             updateButtons(swiper, '.about-prev', '.about-next');
+            pauseAllVideos();
         }
     }
     });
@@ -52,10 +53,20 @@ export function initSwiper () {
             },
             slideChange: function (swiper) {
                 updateButtons(swiper, '.photo-prev', '.photo-next');
+                pauseAllVideos();
             }
         }
     });
 
+
+function pauseAllVideos() {
+        const videos = document.querySelectorAll('.swiper-slide video');
+        videos.forEach(video => {
+            if (!video.paused) {
+                video.pause();
+            }
+        });
+    }
 
     
 

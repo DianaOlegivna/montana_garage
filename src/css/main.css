@@ -409,13 +409,14 @@ font-weight: 400;
         .map-img {
             position: relative;
             display: block;
-            right: 22%;
+            right: 30%;
         }
 
          .map-frame {
              width: 450px;
              height: 380px;
-             margin-right: 50px;
+             margin-right: 70px;
+             border-radius: 5%;
          }
         
 }

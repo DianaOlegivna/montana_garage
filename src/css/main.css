@@ -376,6 +376,7 @@ font-weight: 400;
 .map-frame { 
     width: 480px;
     height: 250px;
+    border-radius: 5%;
 }
 
 .map-img { 
@@ -390,7 +391,7 @@ font-weight: 400;
         }
     
         .map-frame {
-        width: 352px;
+        width: 382px;
             height: 355px;
         }
     
@@ -416,7 +417,6 @@ font-weight: 400;
              width: 450px;
              height: 380px;
              margin-right: 70px;
-             border-radius: 5%;
          }
         
 }
